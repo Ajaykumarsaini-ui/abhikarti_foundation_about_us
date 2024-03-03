@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --primary-color: #A19E9E;
+    --secondary-color: #ffffff;
+    --secondary-bg: #F8F8F8;
+    --para-color: ;
+    --heading-color: #00BFFF;
+    --btn-color: #89CFF0;
+    --btn-hover-color: #98FB98;
+    --secondary-text: #D3D3D3;
+    --font-family: "Roboto", sans-serif;
+    --primary-para: #808080;
+    --hover-icons: #50C878;
+
+}
+
+.btn {}
+
+/* header */
+header {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        justify-content: center;
+        text-align: right;
+        align-items: center;
+        background: #A19E9E;
+
+
+        ul {
+
+
+            li {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+
+                :hover {
+                    background-color: white;
+                }
+
+                a {
+
+                    color: black !important;
+                }
+
+            }
+        }
+    }
+}
+
+nav .navbar-brand {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+header .row {
+    margin: 0;
+    padding: 0;
+}
+
+#welcome h1 {
+    color: var(--heading-color);
+    font-weight: 500;
+}
+
+#promote h1 {
+    color: var(--heading-color);
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+/* #promote #promote_fourth_row h3 {
+} */
+
+
+header.container-fluid {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+header #header_img img {
+    height: 600px;
+    width: 1000px;
+    object-fit: cover;
+}
+
+#navresponsive {
+    display: none;
+}
+
+/* welcome css  */
+#welcome .welcome_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.logo_content {}
+
+#welcome .welcome_content p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-para);
+}
+
+#welcome {
+    font-family: var(--font-family);
+    background-color: var(--secondary-bg);
+}
+
+#motivation {
+    font-family: var(--font-family);
+    /* background-image: url('/img/abba_perry.jpg'); */
+    height: 400px;
+    object-fit: cover;
+    opacity: .9;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#motivation h6 {
+    transform: translateY(50%);
+    margin: auto 1px;
+    max-width: 300px;
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* para  */
+#para {
+    font-family: var(--font-family);
+    color: var(--primary-para);
+
+}
+
+#para p {
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: .2;
+    font-size: 17px;
+}
+
+/* promote */
+#promote p {
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: .2;
+    color: var(--primary-para);
+    font-size: 17px;
+}
+
+.promote_content {
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: .3;
+    color: var(--primary-para);
+    font-size: 17px;
+}
+
+.promote_img img {
+    height: 360px;
+    border-radius: 5px;
+    object-fit: cover;
+    background-position: center;
+    background: center;
+
+}
+
+/* promote_fourth_row */
+
+#promote_fourth_row p {
+    font-size: 20px;
+}
+
+#promote_fourth_row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.fourth_row_items {
+    border-radius: 10px;
+    background-color: var(--btn-hover-color);
+}
+
+
+
+
+/* <!-- <footer></footer> --> */
+
+#footer #footer_icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+
+}
+
+#footer {
+    margin-top: 30px;
+    background-color: #A19E9E;
+}
+
+#footer #footer_icons .border_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    font-size: 18px;
+}
+
+#footer .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#footer .contact h6 {
+    line-height: 30px;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    header .navbar {
+        display: none;
+    }
+
+    #navresponsive {
+        display: block;
+    }
+
+    #navresponsive .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 25px;
+        padding-right: 30px;
+
+
+    }
+
+    #navresponsive .navbar-brand span {
+        padding-bottom: 24px;
+    }
+
+    #navresponsive .navbar-brand img {
+        max-width: 150px;
+        max-height: 60px;
+    }
+
+    #navresponsive .navbar-toggler {
+        color: var(--primary-color) !important;
+        border: none !important;
+        padding-right: 30px;
+    }
+
+    #navresponsive .navbar-toggler-icon {
+        width: 50px;
+        height: 45px;
+    }
+
+    #navresponsive ul {
+        padding-right: 20px;
+    }
+
+    #promote_second_row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:576px) {
+    #navresponsive .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        padding-right: 30px;
+
+
+    }
+
+    #navresponsive .navbar-brand span {
+        padding-bottom: 24px;
+        font-size: 17px;
+        letter-spacing: 0;
+    }
+
+    #navresponsive .navbar-brand img {
+        max-width: 130px;
+        max-height: 60px;
+    }
+
+    #navresponsive .navbar-toggler {
+        color: var(--primary-color) !important;
+        border: none !important;
+        /* padding-right: 25px; */
+    }
+
+    #navresponsive .navbar-toggler-icon {
+        max-width: 40px;
+        max-height: 35px;
+    }
+
+    #navresponsive ul {
+        /* padding-right: 13px; */
+    }
+
+    #promote_fourth_row {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width:380px) {
+    #navresponsive .navbar-brand span {
+        display: none;
+    }
+
+    #navresponsive .navbar-brand img {
+        max-width: 130px;
+        max-height: 60px;
+        margin-right: 20px;
+    }
+
+
+
+}
