@@ -7,20 +7,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+
 :root {
-    --primary-color: #A19E9E;
+    /* --primary-color: #A19E9E; */
+    --primary-color: #98aa9b;
     --secondary-color: #ffffff;
     --secondary-bg: #F8F8F8;
-    --para-color: ;
-    --heading-color: #00BFFF;
+    --smallheadings-color: #f98100;
+    --heading-color: #170e80;
     --btn-color: #89CFF0;
     --btn-hover-color: #98FB98;
     --secondary-text: #D3D3D3;
     --font-family: "Roboto", sans-serif;
     --primary-para: #808080;
     --hover-icons: #50C878;
-
 }
+
 
 .btn {}
 
@@ -38,7 +40,7 @@ header {
         justify-content: center;
         text-align: right;
         align-items: center;
-        background: #A19E9E;
+        background: var(--secondary-bg);
 
 
         ul {
@@ -69,6 +71,7 @@ nav .navbar-brand {
     font-size: 20px;
     font-weight: 600;
     line-height: 20px;
+    color: var(--smallheadings-color);
 }
 
 header .row {
@@ -76,16 +79,23 @@ header .row {
     padding: 0;
 }
 
-#welcome h1 {
-    color: var(--heading-color);
-    font-weight: 500;
+h1 {
+    color: var(--heading-color) !important;
+    font-family: var(--font-family) !important;
+    font-weight: 600 !important;
+    font-size: 46px !important;
+    line-height: 55px !important;
 }
 
-#promote h1 {
-    color: var(--heading-color);
-    font-family: var(--font-family);
-    font-weight: 500;
+h3 {
+    color: var(--smallheadings-color) !important;
+    font-family: var(--font-family) !important;
+    font-weight: 500 !important;
+    font-size: 30px !important;
+    line-height: 35px !important;
 }
+
+
 
 /* #promote #promote_fourth_row h3 {
 } */
@@ -115,7 +125,17 @@ header #header_img img {
     /* align-items: center; */
 }
 
-.logo_content {}
+.logo_content {
+    color: var(--smallheadings-color);
+
+}
+
+.logo_content h6 {
+    line-height: 27px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
 
 #welcome .welcome_content p {
     font-size: 20px;
@@ -125,7 +145,7 @@ header #header_img img {
 
 #welcome {
     font-family: var(--font-family);
-    background-color: var(--secondary-bg);
+    background-color: var(--btn-hover-color);
 }
 
 #motivation {
@@ -158,11 +178,12 @@ header #header_img img {
 
 }
 
-#para p {
-    line-height: 25px;
-    font-weight: 400;
+p {
+    line-height: 27px !important;
+    font-weight: 400 !important;
     letter-spacing: .2;
-    font-size: 17px;
+    font-size: 19px !important;
+    color: var(--primary-color) !important;
 }
 
 /* promote */
@@ -180,6 +201,11 @@ header #header_img img {
     letter-spacing: .3;
     color: var(--primary-para);
     font-size: 17px;
+    line-height: 27px !important;
+    font-weight: 400 !important;
+    letter-spacing: .2;
+    font-size: 19px !important;
+    color: var(--primary-color) !important;
 }
 
 .promote_img img {
@@ -188,6 +214,7 @@ header #header_img img {
     object-fit: cover;
     background-position: center;
     background: center;
+    border-radius: 50px;
 
 }
 
@@ -205,7 +232,8 @@ header #header_img img {
 
 .fourth_row_items {
     border-radius: 10px;
-    background-color: var(--btn-hover-color);
+    background-color: var(--secondary-bg);
+    box-shadow: 1px 1px 12px var(--heading-color);
 }
 
 
@@ -221,10 +249,53 @@ header #header_img img {
 
 }
 
+#footer .navbar-brand {
+    color: var(--smallheadings-color);
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
 #footer {
     margin-top: 30px;
     background-color: #A19E9E;
+    color: var(--secondary-color);
+
 }
+
+#footer #footer_icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+
+}
+
+#footer #footer_icons #icon_content span {
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: #aaa !important;
+}
+
+#footer i {
+    font-size: 19px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer i:hover {
+    color: var(--smallheadings-color) !important;
+    cursor: pointer;
+
+}
+
 
 #footer #footer_icons .border_footer {
     display: flex;
@@ -245,7 +316,14 @@ header #header_img img {
 
 #footer .contact h6 {
     line-height: 30px;
+
 }
+
+#footer .contact h6 span {
+    color: var(--smallheadings-color);
+    font-size: 25px;
+}
+
 
 
 
